@@ -8,7 +8,7 @@
 
 <main class="main">
 	<header class="hero-section">
-		<img class="hero-img" src={hero} alt="" />
+		<enhanced:img class="hero-img" src={hero} alt="" />
 		<h1 class="hero-title">Brukthallen<br />Flekkefjord</h1>
 	</header>
 
