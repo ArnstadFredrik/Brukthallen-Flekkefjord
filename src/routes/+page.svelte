@@ -5,7 +5,7 @@
 <main class="main">
 	<header class="hero-section">
 		<img class="hero-img" src={hero} alt="" />
-		<h1 class="hero-title">Brukthallen Flekkefjord</h1>
+		<h1 class="hero-title">Brukthallen<br />Flekkefjord</h1>
 	</header>
 
 	<section>
@@ -73,13 +73,14 @@
 	@reference "tailwindcss";
 
 	.main {
+		--gap: 1rem;
 		display: grid;
 		background-color: var(--bg);
 		min-block-size: 100svh;
 		gap: 1rem;
 		grid-template-columns:
-			[full-start] minmax(2rem, auto) [content-start] minmax(auto, 75ch) [content-end] minmax(
-				2rem,
+			[full-start] minmax(var(--gap), auto) [content-start] minmax(auto, 75ch) [content-end] minmax(
+				var(--gap),
 				auto
 			)
 			[full-end];
@@ -106,7 +107,8 @@
 	}
 
 	.hero-title {
-		grid-column: content;
+		grid-column: full;
+		width: 100%;
 		place-self: center;
 		background-color: lab(from var(--bg) l a b / 75%);
 	}
