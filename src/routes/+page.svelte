@@ -1,5 +1,8 @@
 <script>
-	import hero from '$lib/assets/store-front.jpg';
+	import hero from '$lib/assets/store-front.jpg?enhanced';
+	import GoogleMap from '$lib/components/GoogleMap.svelte';
+	import Icon from '$lib/components/Icon.svelte';
+	import { mdiMapMarker, mdiPhone } from '@mdi/js';
 </script>
 
 <svelte:head>
@@ -57,15 +60,26 @@
 	<section>
 		<h2>Kontakt oss</h2>
 
+		<div class="icon-line grid">
+			<Icon mdi={mdiPhone} size="1" fill="--color-emerald-900" />
+			<p>900 71 827</p>
+		</div>
+
 		<div>
 			<a href="/" class="button">Mail</a>
 		</div>
 		<div>
-			<a href="/" class="button">Facebook</a>
+			<a href="https://www.facebook.com/profile.php?id=61571948758888" class="button">Facebook</a>
 		</div>
 
 		<h3>Kart</h3>
-		<div class="h-[200px] w-[100%] place-self-center bg-mauve-500"></div>
+
+		<div class="icon-line grid">
+			<Icon mdi={mdiMapMarker} size="1" fill="--color-emerald-900" />
+			<p>Jernbaneveien 10, 4405 Flekkefjord</p>
+		</div>
+
+		<GoogleMap width="100%" />
 	</section>
 
 	<footer>
@@ -77,11 +91,11 @@
 	@reference "tailwindcss";
 
 	.main {
-		--gap: 1rem;
+		--gap: 0.1rem;
 		display: grid;
 		background-color: var(--bg);
 		min-block-size: 100svh;
-		gap: 1rem;
+		row-gap: 1rem;
 		grid-template-columns:
 			[full-start] minmax(var(--gap), auto) [content-start] minmax(auto, 75ch) [content-end] minmax(
 				var(--gap),
@@ -106,20 +120,27 @@
 		grid-column: full;
 	}
 
-	.hero-img {
+	.hero-img,
+	picture {
 		grid-column: full;
+	}
+
+	.hero-img,
+	picture,
+	.hero-title {
+		grid-row: 1/-1;
 	}
 
 	.hero-title {
 		grid-column: full;
 		width: 100%;
+		padding: 2rem;
 		place-self: center;
 		background-color: lab(from var(--bg) l a b / 75%);
-	}
 
-	.hero-img,
-	.hero-title {
-		grid-row: 1/-1;
+		@media (max-width: 425px) {
+			grid-row: initial;
+		}
 	}
 
 	table,

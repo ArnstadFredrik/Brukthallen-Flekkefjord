@@ -43,4 +43,10 @@
 	.full {
 		grid-column: full;
 	}
+
+	.icon-line {
+		grid-template-columns: auto 1fr;
+		align-items: center;
+		column-gap: 0.8rem;
+	}
 }
