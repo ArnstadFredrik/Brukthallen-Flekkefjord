@@ -2,6 +2,10 @@
 	import hero from '$lib/assets/store-front.jpg';
 </script>
 
+<svelte:head>
+	<title>Brukthallen Flekkefjord</title>
+</svelte:head>
+
 <main class="main">
 	<header class="hero-section">
 		<img class="hero-img" src={hero} alt="" />
