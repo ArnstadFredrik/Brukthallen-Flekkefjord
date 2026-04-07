@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+@layer base {
+	:root {
+		--bg: var(--color-gray-50);
+		--base-clr: var(--color-emerald-800);
+		--text-clr: var(--color-gray-900);
+		--heading-clr: lab(from var(--base-clr) l a b);
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4 {
+		font-family: 'Georgia', serif;
+		font-weight: bold;
+		color: var(--heading-clr);
+	}
+
+	h1 {
+		@apply text-center text-4xl;
+	}
+
+	h2 {
+		@apply text-2xl;
+	}
+}
+
+@layer components {
+	.button {
+		@apply rounded-md bg-emerald-200 p-3;
+		display: inline-block;
+	}
+
+	.content {
+		grid-column: content;
+	}
+
+	.full {
+		grid-column: full;
+	}
+}
