@@ -14,7 +14,7 @@
 
 <Hero />
 
-<section>
+<!-- <section>
 	<h2>Om Oss</h2>
 	<p>
 		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste minima delectus dignissimos in
@@ -28,7 +28,7 @@
 		reiciendis impedit, quibusdam ullam possimus.
 	</p>
 </section>
-
+ -->
 <section>
 	<h2>Åpningstider</h2>
 
