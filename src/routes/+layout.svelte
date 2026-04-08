@@ -1,6 +1,7 @@
 <script>
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
+	import Footer from '$lib/components/Footer.svelte';
 
 	let { children } = $props();
 </script>
@@ -14,4 +15,30 @@
 	<meta name="keywords" content="brukt, bruktbutikk, flekkefjord, gjenbruk, second hand, upcycle" />
 </svelte:head>
 
-{@render children()}
+<main>
+	{@render children()}
+
+	<Footer />
+</main>
+
+<style lang="postcss">
+	@reference "tailwindcss";
+
+	main {
+		--gap: 0.5rem;
+		display: grid;
+		background-color: var(--bg);
+		min-block-size: 100svh;
+		row-gap: 1rem;
+		grid-template-columns:
+			[full-start] minmax(var(--gap), auto) [content-start] minmax(auto, 75ch) [content-end] minmax(
+				var(--gap),
+				auto
+			)
+			[full-end];
+	}
+
+	*:has[main] {
+		grid-column: content;
+	}
+</style>
