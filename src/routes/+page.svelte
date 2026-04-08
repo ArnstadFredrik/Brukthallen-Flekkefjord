@@ -105,8 +105,16 @@
 		display: none;
 	}
 
+	tr:nth-of-type(1n) {
+		background-color: var(--color-emerald-100);
+	}
+	tr:nth-of-type(2n) {
+		background-color: var(--color-emerald-50);
+	}
+
 	tbody tr {
 		grid-template-columns: 1fr 1fr;
 		gap: 0.5rem;
+		padding: 0.5rem;
 	}
 </style>
