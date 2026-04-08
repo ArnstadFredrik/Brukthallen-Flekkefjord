@@ -14,6 +14,9 @@
 		display: grid;
 		grid-template-columns: subgrid;
 		grid-column: full;
+		max-height: calc(100svh - 10rem);
+		overflow: hidden;
+		place-content: center;
 	}
 
 	.hero-img,
