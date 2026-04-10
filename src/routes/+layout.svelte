@@ -2,11 +2,13 @@
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import Footer from '$lib/components/Footer.svelte';
+	import PWA from '$lib/components/PWA.svelte';
 
 	let { children } = $props();
 </script>
 
 <svelte:head>
+	<PWA />
 	<link rel="icon" href={favicon} />
 	<meta
 		name="description"

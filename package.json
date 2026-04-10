@@ -9,7 +9,8 @@
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
 		"lint": "prettier --check . && eslint .",
-		"format": "prettier --write ."
+		"format": "prettier --write .",
+		"pwa": "pwa-asset-generator src/lib/assets/favicon.svg --manifest static/manifest.json --index src/lib/components/PWA.svelte --path-override '/pwa' static/pwa"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^2.0.3",
@@ -26,6 +27,7 @@
 		"prettier": "^3.8.1",
 		"prettier-plugin-svelte": "^3.4.1",
 		"prettier-plugin-tailwindcss": "^0.7.2",
+		"pwa-asset-generator": "^8.1.4",
 		"svelte": "^5.54.0",
 		"tailwindcss": "^4.1.18",
 		"vite": "^7.3.1"
