@@ -84,17 +84,6 @@
 		background-color: var(--bg);
 	}
 
-	.hero-img,
-	picture {
-		grid-column: full;
-	}
-
-	.hero-img,
-	picture,
-	.hero-title {
-		grid-row: 1/-1;
-	}
-
 	table,
 	tbody,
 	tr,

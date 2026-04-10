@@ -1,6 +1,6 @@
 <script>
 	import Icon from '$lib/components/Icon.svelte';
-	import { mdiEmail, mdiFacebook, mdiMail, mdiPhone } from '@mdi/js';
+	import { mdiEmail, mdiFacebook, mdiPhone } from '@mdi/js';
 </script>
 
 <div class="icon-line grid">

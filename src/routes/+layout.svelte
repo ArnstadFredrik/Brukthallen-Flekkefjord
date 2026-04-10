@@ -3,7 +3,6 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import Footer from '$lib/components/Footer.svelte';
 	import PWA from '$lib/components/PWA.svelte';
-	import Install from '$lib/components/Install.svelte';
 
 	let { children } = $props();
 </script>
