@@ -3,13 +3,14 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import Footer from '$lib/components/Footer.svelte';
 	import PWA from '$lib/components/PWA.svelte';
+	import Install from '$lib/components/Install.svelte';
 
 	let { children } = $props();
 </script>
 
 <svelte:head>
 	<PWA />
-	<link rel="icon" href={favicon} />
+	<link rel="icon" type="image/svg+xml" href={favicon} />
 	<meta
 		name="description"
 		content="Bruktbutikken Brukthallen i Flekkefjord er en butikk som mottar og selger gjenbruksvarer i og rundt Flekkefjord."
