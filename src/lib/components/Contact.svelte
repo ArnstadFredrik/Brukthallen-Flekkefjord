@@ -9,6 +9,11 @@
 </div>
 
 <div class="icon-line grid">
+	<Icon mdi={mdiPhone} size="1" fill="--color-emerald-900" />
+	<p>902 08 024 (Levering og Henting)</p>
+</div>
+
+<div class="icon-line grid">
 	<Icon mdi={mdiEmail} size="1" fill="--color-emerald-900" />
 	<a href="/" class="">Mail</a>
 </div>

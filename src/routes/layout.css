@@ -27,6 +27,7 @@
 
 	h2 {
 		@apply text-2xl;
+		padding-bottom: 0.5rem;
 	}
 
 	h3 {
@@ -41,11 +42,23 @@
 		@apply text-base;
 	}
 
+	p + p {
+		margin-block-start: 1rem;
+	}
+
 	a {
 		text-decoration: underline;
 		text-decoration-color: var(--color-emerald-600);
 		text-decoration-thickness: 0.2rem;
 		text-underline-offset: 0.2rem;
+	}
+
+	section,
+	.content {
+		grid-column: content;
+	}
+	.fullwidth {
+		grid-column: full;
 	}
 }
 

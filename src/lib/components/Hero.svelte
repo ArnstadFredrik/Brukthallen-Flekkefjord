@@ -2,7 +2,7 @@
 	import hero from '$lib/assets/store-front.jpg?enhanced';
 </script>
 
-<header class="hero-section">
+<header class="hero-section fullwidth">
 	<enhanced:img class="hero-img" src={hero} alt="Fasaden av Brukthallen i Flekkefjord" />
 	<h1 class="hero-title">Brukthallen<br />Flekkefjord</h1>
 </header>
@@ -13,7 +13,6 @@
 	.hero-section {
 		display: grid;
 		grid-template-columns: subgrid;
-		grid-column: full;
 		max-height: calc(100svh - 10rem);
 		overflow: hidden;
 		place-content: center;

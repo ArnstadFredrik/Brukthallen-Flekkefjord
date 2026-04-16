@@ -10,7 +10,8 @@
 		"prepare": "svelte-kit sync || echo ''",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
-		"pwa": "pwa-asset-generator src/lib/assets/favicon.svg --manifest static/manifest.json --index src/lib/components/PWA.svelte --path-override '/pwa' static/pwa"
+		"pwa:assets": "pwa-asset-generator src/lib/assets/favicon.svg --manifest static/manifest.json static/pwa --path-override '/pwa",
+		"pwa:index": "pwa-asset-generator src/lib/assets/favicon.svg --manifest static/manifest.json --index src/lib/components/PWA.svelte --path-override '/pwa' static/pwa"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^2.0.3",

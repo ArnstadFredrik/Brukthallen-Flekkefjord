@@ -5,6 +5,7 @@
 	import GoogleMap from '$lib/components/GoogleMap.svelte';
 	import Hero from '$lib/components/Hero.svelte';
 	import Icon from '$lib/components/Icon.svelte';
+	import Section from '$lib/components/Section.svelte';
 	import { mdiMapMarker, mdiPhone } from '@mdi/js';
 </script>
 
@@ -14,24 +15,15 @@
 
 <Hero />
 
-<!-- <section>
-	<h2>Om Oss</h2>
+<Section title="Om Oss">
 	<p>
-		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste minima delectus dignissimos in
-		temporibus fuga esse quam natus, sapiente obcaecati vitae, officia ea adipisci assumenda
-		repudiandae quo? Beatae, aspernatur! Voluptas ad vel provident quibusdam aliquid deleniti natus
-		fugiat vitae, facere magni repellat, sequi placeat officia autem perspiciatis, ducimus
-		voluptatibus expedita facilis aliquam eligendi? Commodi iste ex maiores repudiandae molestias.
-		Aliquam quibusdam magnam optio ad assumenda voluptatum corrupti repellendus ipsum quis
-		accusantium accusamus rem id, sed illum incidunt minima cumque quos repellat iusto consequatur
-		molestiae ullam eligendi aperiam. Tenetur assumenda optio at consectetur quam, soluta numquam,
-		reiciendis impedit, quibusdam ullam possimus.
+		Brukthallen drives av Foreningen «Kirketorgets venner». Overskuddet går til det nye Kirketorget
+		som skal bygges der Bondeheimen nå står. Brukthallen drives som et dugnadsprosjekt for
+		realisering av et nytt flott bygg for hele kommunen der også Kirkekontorene vil inngå.
 	</p>
-</section>
- -->
-<section>
-	<h2>Åpningstider</h2>
+</Section>
 
+<Section title="Åpningstider">
 	<table>
 		<thead>
 			<tr>
@@ -54,10 +46,26 @@
 			</tr>
 		</tbody>
 	</table>
-</section>
+</Section>
 
-<section>
-	<h2>Kontakt oss</h2>
+<Section title="Levering og henting av varer">
+	<p>
+		Hele og rene varer tas hovedsakelig imot i butikkens åpningstider. Større gjenstander kan
+		hentes. Dette gjøres i fortrinnsvis på onsdager eller etter avtale. Kontaktperson: Ivar Espenes,
+		tlf: 902 08 024.
+	</p>
+	<p>
+		Vi henter også varer i distriktene: Åna Sira, Feda, Gyland, Hidra og Sira, da etter faste
+		tidspunkt. Dette kunngjøres på Facebook, med oppslag på de aktuelle stedene og på vår egen
+		Facebook side: <a href="https://www.facebook.com/profile.php?id=61571948758888"
+			>Brukthallen Flekkefjord.</a
+		><br />
+		<em>Merk: Vi kan dessverre ikke ta imot senger, madrasser eller hvitevarer. </em>
+	</p>
+	<p>Takk for at du velger Brukthallen og dermed støtter bygging av det nye Kirketorget!</p>
+</Section>
+
+<Section title="Kontakt Oss">
 	<Contact />
 
 	<div class="icon-line grid">
@@ -71,13 +79,12 @@
 	</div>
 
 	<GoogleMap width="100%" />
-</section>
+</Section>
 
 <style lang="postcss">
 	@reference "tailwindcss";
 
 	section {
-		grid-column: content;
 		display: grid;
 		grid-template-columns: subgrid;
 		gap: 0.8rem;
