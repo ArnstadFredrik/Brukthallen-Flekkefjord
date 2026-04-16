@@ -1,5 +1,5 @@
 <footer>
-	<p>Brukthallen flekkefjord er drevet av frivillige for Flekkefjord Menighet</p>
+	<p>Brukthallen flekkefjord er drevet av foreningen «Kirketorgets venner»</p>
 </footer>
 
 <style>
