@@ -33,16 +33,12 @@
 		</thead>
 		<tbody>
 			<tr>
-				<td heading="Dager">Onsdag og Fredag</td>
+				<td heading="Dager">Mandal til Fredag</td>
 				<td heading="Tid">11:00-16:00</td>
 			</tr>
 			<tr>
-				<td heading="Dager">Torsdag</td>
-				<td heading="Tid">11:00-18:00</td>
-			</tr>
-			<tr>
 				<td heading="Dager">Lørdag</td>
-				<td heading="Tid">11:00-14:00</td>
+				<td heading="Tid">11:00-15:00</td>
 			</tr>
 		</tbody>
 	</table>
