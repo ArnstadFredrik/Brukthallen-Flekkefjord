@@ -12,7 +12,7 @@
 	<link rel="icon" type="image/svg+xml" href={favicon} />
 	<meta
 		name="description"
-		content="Bruktbutikken Brukthallen i Flekkefjord er en butikk som mottar og selger gjenbruksvarer i og rundt Flekkefjord."
+		content="Bruktbutikken Brukthallen i Flekkefjord er en butikk driver gjenbruk og mottar og selger gjenbruksvarer i og rundt Flekkefjord."
 	/>
 	<meta
 		name="keywords"
