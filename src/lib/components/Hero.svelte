@@ -1,5 +1,5 @@
 <script>
-	import hero from '$lib/assets/store-front.jpg?enhanced';
+	import hero from '$lib/assets/brukthallen_web.webp?enhanced';
 </script>
 
 <header class="hero-section fullwidth">
@@ -13,7 +13,7 @@
 	.hero-section {
 		display: grid;
 		grid-template-columns: subgrid;
-		max-height: calc(100svh - 10rem);
+		grid-template-rows: 1fr 10rem;
 		overflow: hidden;
 		place-content: center;
 	}
@@ -21,13 +21,15 @@
 	.hero-img,
 	picture {
 		grid-column: full;
+		max-height: calc(100svh - 10rem);
+		object-fit: cover;
 	}
 
-	.hero-img,
+	/*.hero-img,
 	picture,
 	.hero-title {
 		grid-row: 1/-1;
-	}
+	}*/
 
 	.hero-title {
 		grid-column: full;
@@ -35,6 +37,7 @@
 		padding: 2rem;
 		place-self: center;
 		background-color: lab(from var(--bg) l a b / 75%);
+		grid-row: initial;
 
 		@media (max-width: 425px) {
 			grid-row: initial;
